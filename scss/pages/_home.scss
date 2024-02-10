@@ -1,0 +1,138 @@
+.main__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16rem;
+  background-image: url(../../images/shared/desktop/bg-pattern-leaf.svg);
+  background-repeat: no-repeat;
+  background-position: 26.9rem 172.7rem;
+}
+
+.home-hero {
+  @include radius;
+  margin-top: 3px;
+
+  padding: 14.5rem 9.5rem;
+  background-color: $Peach;
+
+  position: relative;
+  display: flex;
+  background-image: url(../../images/home/desktop/bg-pattern-hero-home.svg);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.phone {
+  width: 28.1rem;
+  height: 57.8rem;
+  background-image: url(../../images/home/desktop/image-hero-phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 13.9rem;
+  right: 9.7rem;
+}
+.home-hero__content {
+  width: 54rem;
+  h1 {
+    margin-bottom: 2.7rem;
+  }
+  p {
+    margin-bottom: 4rem;
+    width: 44.5rem;
+  }
+}
+.btn-light {
+}
+.btn-learn {
+}
+.pages {
+  display: flex;
+  gap: 3rem;
+  a {
+    color: $white;
+  }
+  h2 {
+    margin-bottom: 2.4rem;
+  }
+  p {
+    @include fonts(15px, auto, 5px);
+    text-align: center;
+  }
+}
+.web-large {
+  @include pages;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/home/desktop/image-web-design-large.jpg);
+  padding: 27.1rem 13.6rem;
+
+  &:hover {
+    background-image: linear-gradient(
+        rgba(233, 129, 107, 0.8),
+        rgba(233, 129, 107, 0.8)
+      ),
+      url(../../images/home/desktop/image-web-design-large.jpg);
+  }
+}
+.web-small {
+  @include pages;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/home/desktop/image-web-design-small.jpg);
+  padding: 10.7rem 13.6rem;
+  &:hover {
+    background-image: linear-gradient(
+        rgba(233, 129, 107, 0.8),
+        rgba(233, 129, 107, 0.8)
+      ),
+      url(../../images/home/desktop/image-web-design-small.jpg);
+  }
+}
+.design-pages {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+.app {
+  @include pages;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/home/desktop/image-app-design.jpg);
+
+  padding: 10.7rem 14.3rem;
+  &:hover {
+    background-image: linear-gradient(
+        rgba(233, 129, 107, 0.8),
+        rgba(233, 129, 107, 0.8)
+      ),
+      url(../../images/home/desktop/image-app-design.jpg);
+  }
+}
+.graphic {
+  @include pages;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../../images/home/desktop/image-graphic-design.jpg);
+
+  padding: 10.7rem 8.8rem;
+  &:hover {
+    background-image: linear-gradient(
+        rgba(233, 129, 107, 0.8),
+        rgba(233, 129, 107, 0.8)
+      ),
+      url(../../images/home/desktop/image-graphic-design.jpg);
+  }
+}
+
+.specialty {
+  display: flex;
+  gap: 3rem;
+
+  span {
+    @include flex;
+    flex-direction: column;
+    width: 35rem;
+    color: $dark-gray;
+    text-align: center;
+    gap: 3.2rem;
+    img {
+      background-image: url(../../images/shared/desktop/bg-pattern-small-circle.svg);
+      margin-bottom: 1.5rem;
+    }
+  }
+}

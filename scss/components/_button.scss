@@ -1,0 +1,30 @@
+.btn-light,
+.btn-dark {
+  @include common_button;
+}
+.btn-light {
+  @include buttons($dark-gray, $white);
+  &:hover {
+    @include buttons_hover($white, $light-peach);
+  }
+}
+.btn-dark {
+  @include buttons($white, $Peach);
+  &:hover {
+    @include buttons_hover($white, $light-peach);
+  }
+}
+
+.btn-submit {
+  @include padding(4.7rem, 4.7rem);
+}
+.btn-location {
+  @include padding(1.8rem, 1.8rem);
+}
+
+.btn-get {
+  @include padding(1.8rem, 1.9rem);
+}
+.btn-learn {
+  @include padding(2.2rem, 2.2rem);
+}

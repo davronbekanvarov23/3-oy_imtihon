@@ -1,0 +1,43 @@
+/* jost-regular - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/jost-v15-latin-regular.woff2") format("woff2");
+}
+/* jost-500 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/jost-v15-latin-500.woff2") format("woff2");
+}
+/* jost-700 - latin */
+@font-face {
+  font-display: swap;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/jost-v15-latin-700.woff2") format("woff2");
+}
+
+html {
+  font-size: 62.5%; // 10px
+}
+
+body {
+  font-family: $main-font-family;
+  @include fonts($body-fs, $body-lh);
+  color: $white;
+}
+h1 {
+  @include fonts($h1-fs, $h1-lh);
+}
+h2 {
+  @include fonts($h2-fs, $h2-lh, $h2-ls);
+}
+h3 {
+  @include fonts($h3-fs, $h3-lh, $h3-ls);
+}

@@ -1,0 +1,58 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin fonts(
+  $font-size: "inherit",
+  $line-hight: "normal",
+  $letter-spacing: "normal"
+) {
+  font-size: $font-size;
+  line-height: $line-hight;
+  letter-spacing: $letter-spacing;
+}
+
+@mixin common_button {
+  width: 15.2rem;
+  height: 5.6rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 0;
+  text-decoration: none;
+  border-radius: 8px;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+}
+@mixin buttons($color, $bg-color, $border-color: transparent) {
+  color: $color;
+  background-color: $bg-color;
+  border-color: $border-color;
+  transition-duration: $transtion-duration;
+}
+@mixin buttons_hover($color, $bg-color) {
+  background-color: $bg-color;
+  color: $color;
+}
+@mixin flex {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+@mixin padding($right, $left) {
+  padding-right: $right;
+  padding-left: $left;
+}
+@mixin pages {
+  @include radius;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@mixin radius {
+  border-radius: 1.5rem;
+}

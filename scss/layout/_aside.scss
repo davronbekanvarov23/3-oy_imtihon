@@ -1,0 +1,25 @@
+.About {
+  padding: 7rem 9.6rem 4.8rem 9.5rem;
+  position: relative;
+  z-index: 1;
+  background-color: $Peach;
+  @include radius;
+  @include flex;
+  justify-content: space-between;
+  // background-image: url(../../images/shared/desktop/bg-pattern-two-circles.svg);
+
+  // background-repeat: repeat-y;
+}
+.bottom__card {
+  width: 28.1rem;
+  height: 17.4rem;
+  h4 {
+    @include fonts(4rem, 4rem, 0);
+
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+  }
+  p {
+    width: 46rem;
+  }
+}

@@ -1,0 +1,27 @@
+.map__Canada {
+  color: $dark-gray;
+  display: flex;
+  gap: 3rem;
+  iframe {
+    @include radius;
+  }
+}
+.map__text {
+  @include radius;
+  background-color: $design-bg;
+  padding: 8.8rem 9.5rem;
+  background-image: url(../../images/shared/desktop/bg-pattern-two-circles.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  h2 {
+    color: $Peach;
+    margin-bottom: 2.4rem;
+  }
+}
+.map__info {
+  display: flex;
+  gap: 3rem;
+  p {
+    width: 25.5rem;
+  }
+}

@@ -1,0 +1,32 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 6.4rem;
+  padding-bottom: 6.4rem;
+ 
+}
+
+.sitenav__list {
+  @include flex;
+  gap: 4.2rem;
+}
+
+.sitenav__link {
+  @include fonts(1.4rem, 1.4rem, 2px);
+  color: $dark-gray;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: $dark-gray;
+    display: inline-block;
+    left: 0;
+    bottom: -1px;
+    transition: $transtion-duration;
+  }
+  &:hover::after {
+    width: 100%;
+  }
+}
